@@ -15,6 +15,9 @@
 		654BACBD1FE2687E00033FC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 654BACBC1FE2687E00033FC0 /* main.m */; };
 		654BACC71FE2687E00033FC0 /* RCIDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654BACC61FE2687E00033FC0 /* RCIDemoTests.m */; };
 		654BACD21FE2687E00033FC0 /* RCIDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 654BACD11FE2687E00033FC0 /* RCIDemoUITests.m */; };
+		654BACE41FE277D000033FC0 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654BACE31FE277D000033FC0 /* WelcomeViewController.m */; };
+		654BACE71FE2964200033FC0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654BACE61FE2964200033FC0 /* LoginViewController.m */; };
+		655830951FFBAB5400DA1812 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655830941FFBAB5400DA1812 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		654BACCD1FE2687E00033FC0 /* RCIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		654BACD11FE2687E00033FC0 /* RCIDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCIDemoUITests.m; sourceTree = "<group>"; };
 		654BACD31FE2687E00033FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		654BACE21FE277D000033FC0 /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		654BACE31FE277D000033FC0 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		654BACE51FE2964200033FC0 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		654BACE61FE2964200033FC0 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		655830931FFBAB5400DA1812 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		655830941FFBAB5400DA1812 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		654BACAC1FE2687E00033FC0 /* RCIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				654BACE11FE2778D00033FC0 /* ViewControllers */,
 				654BACAD1FE2687E00033FC0 /* AppDelegate.h */,
 				654BACAE1FE2687E00033FC0 /* AppDelegate.m */,
 				654BACB01FE2687E00033FC0 /* ViewController.h */,
@@ -130,6 +140,19 @@
 				654BACD31FE2687E00033FC0 /* Info.plist */,
 			);
 			path = RCIDemoUITests;
+			sourceTree = "<group>";
+		};
+		654BACE11FE2778D00033FC0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				654BACE21FE277D000033FC0 /* WelcomeViewController.h */,
+				654BACE31FE277D000033FC0 /* WelcomeViewController.m */,
+				654BACE51FE2964200033FC0 /* LoginViewController.h */,
+				654BACE61FE2964200033FC0 /* LoginViewController.m */,
+				655830931FFBAB5400DA1812 /* HomeViewController.h */,
+				655830941FFBAB5400DA1812 /* HomeViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				654BACB21FE2687E00033FC0 /* ViewController.m in Sources */,
+				654BACE41FE277D000033FC0 /* WelcomeViewController.m in Sources */,
 				654BACBD1FE2687E00033FC0 /* main.m in Sources */,
 				654BACAF1FE2687E00033FC0 /* AppDelegate.m in Sources */,
+				654BACE71FE2964200033FC0 /* LoginViewController.m in Sources */,
+				655830951FFBAB5400DA1812 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RCIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Rci-Cts.RCIDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,6 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RCIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Rci-Cts.RCIDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
